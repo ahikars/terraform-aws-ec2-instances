@@ -10,7 +10,7 @@
 
 variable in_node_count {
     description = "The number of nodes that this fixed size ec2 instance cluster should bring up."
-    default     = 4
+    default     = 3
 }
 
 ### ######### ###
@@ -19,6 +19,7 @@ variable in_node_count {
 
 variable in_ami_id {
     description = "The ID of the EC2 machine image (AMI) that each instance will boot up from."
+    default     = "ami-01581ffba3821cdf3"
 }
 
 
@@ -38,7 +39,7 @@ variable in_user_data {
 
 variable in_instance_type {
     description = "The ec2 instance type (default is t2.medium) that will make up the fixed size ec2 cluster nodes."
-    default = "t2.medium"
+    default = "t3.large"
 }
 
 
@@ -76,9 +77,9 @@ variable in_security_group_ids {
 ### in_ssh_public_key ###
 ### ################# ###
 
-variable in_ssh_public_key {
-    description = "The public key for accessing both the DMZ bastion and the nodes behind enemy lines."
-}
+#variable in_ssh_public_key {
+#    description = "The public key for accessing both the DMZ bastion and the nodes behind enemy lines."
+#}
 
 
 /*
