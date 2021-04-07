@@ -69,7 +69,7 @@ variable in_subnet_ids {
 
 variable in_security_group_ids {
     description = "The identifiers of the (usually 1) security group that the nodes will identify with."
-    type        = list
+    type        = "sg-05092a13135f9b47b"
 }
 
 
